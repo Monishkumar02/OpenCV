@@ -19,7 +19,7 @@ index = 0
 
 kernel = np.ones((5, 5), np.uint8)
 
-color = (0, 0, 255)
+color = (0, 0, 200)
 
 paintWindow = np.zeros((480, 640, 3))+255
 
