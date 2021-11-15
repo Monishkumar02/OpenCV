@@ -19,7 +19,7 @@ index = 0
 
 kernel = np.ones((5, 5), np.uint8)
 
-color = (0, 0, 250)
+color = (0, 0, 255)
 
 paintWindow = np.zeros((480, 640, 3))+255
 
@@ -60,7 +60,7 @@ while True:
         
         ((x, y), radius) = cv2.minEnclosingCircle(cnt)
         
-        cv2.circle(frame, (int(x), int(y)), int(radius), (0, 255, 255), 2)
+        cv2.circle(frame, (int(x), int(y)), int(radius), (0, 200, 250), 2)
         
         M = cv2.moments(cnt)
         center = (int(M['m10'] / M['m00']), int(M['m01'] / M['m00']))
